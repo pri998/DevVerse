@@ -1,0 +1,36 @@
+Format Template:
+
+**User Story ID:** SM-US-[Number]
+**Title:** [Concise description of the goal]
+**As a:** [Type of user - e.g., Registered User, Guest User, Administrator]
+**I want to:** [Perform an action - e.g., post a status update, follow another user]
+**So that:** [Benefit/Goal achieved - e.g., share my thoughts with my followers, see updates from people I'm interested in]
+
+**Acceptance Criteria:**
+* AC1: [Specific condition that must be met for the story to be considered complete - e.g., The post appears on my profile feed immediately.]
+* AC2: [Another specific condition - e.g., My followers see the post in their news feed.]
+* AC3: [Edge case or negative condition - e.g., An error message appears if the post exceeds the character limit.]
+* ... (Add as many as needed)
+
+**Priority:** [High | Medium | Low]
+**Related Feature/Epic:** [Optional: Link to a larger feature, e.g., News Feed, User Profile]
+**Notes:** [Optional: Any additional context, UI mockups references, etc.]
+Example User Story (Social Media):
+
+**User Story ID:** SM-US-005
+**Title:** Follow Another User
+**As a:** Registered User
+**I want to:** Click a "Follow" button on another user's profile
+**So that:** I can see their posts in my news feed and stay updated on their activity.
+
+**Acceptance Criteria:**
+* AC1: When I visit another user's profile, a "Follow" button is visible if I am not already following them.
+* AC2: Clicking the "Follow" button changes its state to "Following".
+* AC3: The user I followed is added to my "Following" list.
+* AC4: My follower count on my profile remains unchanged; the followed user's follower count increments by one.
+* AC5: Posts from the followed user start appearing in my news feed (chronologically or based on algorithm).
+* AC6: If I am already following the user, the button shows "Following" and clicking it initiates the "Unfollow" action (covered in a separate story perhaps).
+
+**Priority:** High
+**Related Feature/Epic:** User Profile, News Feed
+**Notes:** Consider notification mechanisms for the followed user.

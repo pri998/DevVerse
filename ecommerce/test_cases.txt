@@ -1,0 +1,36 @@
+**Test Case ID:** EC-TC-[Module]-[Number] (e.g., EC-TC-Cart-001)
+**Test Suite/Module:** [e.g., Shopping Cart, Checkout, Product Search]
+**Related Requirement/User Story:** [e.g., EC-US-012]
+**Title:** [e.g., Verify adding an available product to the cart]
+**Priority:** [High | Medium | Low]
+**Test Type:** [e.g., Functional, UI, Integration (with Inventory)]
+
+**Preconditions:**
+* [e.g., User is on the Product Detail Page for Product X. Product X has a stock quantity > 0. The user's cart is initially empty (or has known contents).]
+
+**Test Steps:**
+1.  [Action: e.g., Note the current stock level of Product X.]
+2.  [Action: e.g., Note the current item count shown in the header cart icon.]
+3.  [Action: e.g., Click the "Add to Cart" button for Product X.]
+4.  [Action: e.g., Observe any confirmation message.]
+5.  [Action: e.g., Observe the updated item count in the header cart icon.]
+6.  [Action: e.g., Navigate to the Shopping Cart page.]
+7.  [Action: e.g., Verify Product X is listed in the cart with quantity 1 and correct price.]
+8.  [Action: e.g., (Optional - Integration) Check if the available stock for Product X has been reserved or potentially decreased (depends on system design - stock usually decreases on order completion).]
+
+**Test Data:**
+* Product X URL/ID: [e.g., /products/prod123]
+* Initial Stock (if needed): [e.g., 10]
+
+**Expected Result:**
+* [Step 2: Cart icon shows N items.]
+* [Step 4: A confirmation message (e.g., "Product X added to cart") appears.]
+* [Step 5: Cart icon shows N+1 items.]
+* [Step 7: Product X is present in the cart details with Quantity = 1 and its correct price.]
+* [Step 8: (If applicable) Stock reservation logic is triggered correctly.]
+
+**Actual Result:** [...]
+**Status:** [Pass | Fail | Blocked | Skipped]
+**Tester:** [...]
+**Date Tested:** [...]
+**Notes/Bug ID:** [...]

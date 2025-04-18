@@ -1,0 +1,35 @@
+**User Story ID:** EC-US-[Number]
+**Title:** [Concise description of the goal]
+**As a:** [Type of user - e.g., Guest Customer, Registered Customer, Administrator, Seller]
+**I want to:** [Perform an action - e.g., add a product to my shopping cart, filter products by price]
+**So that:** [Benefit/Goal achieved - e.g., I can purchase it later, I can find products within my budget]
+
+**Acceptance Criteria:**
+* AC1: [Specific condition - e.g., The cart icon updates with the correct item count.]
+* AC2: [Specific condition - e.g., The product details (name, price, quantity) appear correctly in the cart view.]
+* AC3: [Edge case - e.g., If I add more items than are in stock, an error message is displayed and the item is not added/quantity capped.]
+* ...
+
+**Priority:** [High | Medium | Low]
+**Related Feature/Epic:** [e.g., Shopping Cart, Product Listing Page]
+**Notes:** [...]
+Example User Story (E-commerce):
+
+**User Story ID:** EC-US-012
+**Title:** Add Product to Cart from Product Detail Page
+**As a:** Guest Customer
+**I want to:** Click an "Add to Cart" button on a product's detail page
+**So that:** The item is saved in my shopping cart for potential purchase.
+
+**Acceptance Criteria:**
+* AC1: An "Add to Cart" button is visible on the product detail page if the item is in stock.
+* AC2: Clicking "Add to Cart" adds one unit of the selected product to the shopping cart.
+* AC3: A visual confirmation (e.g., toast notification "Item added to cart", mini-cart preview opens) is shown.
+* AC4: The cart icon in the header updates to reflect the new total number of items (or quantity).
+* AC5: If the item is already in the cart, clicking "Add to Cart" increments the quantity of that item in the cart.
+* AC6: If the product is out of stock, the "Add to Cart" button should be disabled or display "Out of Stock".
+* AC7: Adding fails gracefully with a message if the requested quantity exceeds stock levels during the add operation.
+
+**Priority:** High
+**Related Feature/Epic:** Shopping Cart, Product Detail Page
+**Notes:** Considers guest cart persistence (e.g., using session/local storage).

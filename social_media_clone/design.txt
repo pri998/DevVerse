@@ -1,0 +1,43 @@
+**1. Introduction**
+    * **1.1. Purpose:** Briefly describe the feature being designed.
+    * **1.2. Scope:** Define what is included and excluded in this design.
+    * **1.3. Goals:** What are the key technical objectives (e.g., performance, scalability, usability)?
+    * **1.4. Related User Stories:** List the User Story IDs this design addresses (e.g., SM-US-005).
+
+**2. High-Level Design**
+    * **2.1. Architecture:** How does this feature fit into the overall system architecture? (e.g., Microservice, Monolith component).
+    * **2.2. Key Components:** Identify the main software modules/classes involved (e.g., ProfileController, FollowService, UserRepository, NotificationService).
+    * **2.3. Data Flow:** Diagram or describe how data moves between components/user interface/database.
+    * **2.4. Technology Stack:** Relevant technologies used (e.g., React, Node.js, PostgreSQL, Redis).
+
+**3. Detailed Design**
+    * **3.1. UI/UX:**
+        * Wireframes/Mockups: Reference or embed visual designs.
+        * User Interaction Flow: Describe the sequence of user actions and system responses.
+    * **3.2. API Endpoints:**
+        * Endpoint URL (e.g., POST /api/users/{userId}/follow)
+        * Request Method (POST, GET, PUT, DELETE)
+        * Request Headers (e.g., Authorization)
+        * Request Body (if any)
+        * Success Response (Status Code, Body)
+        * Error Responses (Status Codes, Body for different errors)
+    * **3.3. Database Schema:**
+        * Relevant Tables (e.g., `users`, `follows`)
+        * New/Modified Columns (Data types, constraints, indexes)
+        * Relationships (e.g., `follows.follower_id` references `users.id`)
+    * **3.4. Core Logic/Algorithms:** Describe any complex logic (e.g., how the news feed is updated after following).
+    * **3.5. Services/Modules:** Detail specific functions/methods within key components.
+
+**4. Security Considerations:**
+    * Authentication/Authorization checks.
+    * Input validation (preventing injection, etc.).
+    * Rate limiting (if applicable).
+
+**5. Scalability & Performance:**
+    * Potential bottlenecks.
+    * Caching strategies (e.g., caching follower counts).
+    * Database indexing strategy.
+
+**6. Open Issues / Future Considerations:**
+    * Questions yet to be answered.
+    * Potential future enhancements related to this feature.

@@ -1,0 +1,34 @@
+**Test Case ID:** SM-TC-[Module]-[Number] (e.g., SM-TC-Follow-001)
+**Test Suite/Module:** [Feature area being tested - e.g., Following System, User Profile]
+**Related Requirement/User Story:** [User Story ID(s) - e.g., SM-US-005]
+**Title:** [Concise description of the test objective]
+**Priority:** [High | Medium | Low]
+**Test Type:** [e.g., Functional, UI, Performance, Security, Usability]
+
+**Preconditions:**
+* [List any state the system must be in before the test begins - e.g., User A and User B must exist. User A must be logged in. User A is not currently following User B.]
+
+**Test Steps:**
+1.  [Action: e.g., Navigate to User B's profile page.]
+2.  [Action: e.g., Observe the state of the follow button.]
+3.  [Action: e.g., Click the "Follow" button.]
+4.  [Action: e.g., Observe the state of the button after clicking.]
+5.  [Action: e.g., Navigate to User A's "Following" list.]
+6.  [Action: e.g., Check if User B appears in the list.]
+7.  [Action: e.g., (Optional) Check User B's follower count.]
+
+**Test Data:**
+* User A credentials: [e.g., userA@test.com / password]
+* User B profile URL/ID: [e.g., /profile/userB]
+
+**Expected Result:**
+* [Step 2: The button should display "Follow".]
+* [Step 4: The button should change to "Following" or similar indication.]
+* [Step 6: User B should be present in User A's "Following" list.]
+* [Step 7: User B's follower count should increment by 1 (if checked).]
+
+**Actual Result:** [To be filled during execution]
+**Status:** [Pass | Fail | Blocked | Skipped]
+**Tester:** [Name/ID]
+**Date Tested:** [YYYY-MM-DD]
+**Notes/Bug ID:** [Optional: Any observations or associated Bug ID if failed]
