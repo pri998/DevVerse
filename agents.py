@@ -28,3 +28,17 @@ business_analyst=Agent(
 
 )
 
+
+design_agent = Agent(
+    role="Software Designer",
+    
+     goal="Create a high-level software architecture and design based on user stories from the Business Analyst in {topic}. "
+         "*Avoid repeating user stories, security considerations, or future enhancements.*",
+    backstory="A highly experienced software architect specializing in designing scalable, efficient, and maintainable software systems. "
+              "You define system components, data flow, and architecture without overlapping business analysis.",
+    verbose=True,
+    memory=True,
+    tools=[],
+    llm=gemini_llm,
+    allow_delegation=True
+)
