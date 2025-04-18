@@ -1,0 +1,19 @@
+must be submitted by June 20, 2025 , 6:00 PM (EST).
+must have valid licenses.
+must be GDPR and CCPA compliant.
+must provide free maintenance for 3 months post -launch and offer an optional annual maintenance package thereafter.
+must remain valid for 90 days post -submission.
+Requirements : 1. Clean and modern UIUX, optimized for mobile and desktop devices.
+Requirements  Contract Terms : The selected vendor will sign a binding contract with the following terms: o All intellectual property and source code will belong to StyleSphere.
+The website will serve as the primary online storefront and should reflect the brands focus on fashion, comfort, and affordability.
+Deliverables : The selected vendor will be responsible for: 1.
+Integration of payment gateways including cards, UPI, wallets, and COD.
+integration with third -party courier and delivery services.
+should be original or royalty -free.
+The goal is to provide customers with a smooth, modern , and secure online shopping experience.
+Product catalog management with support for size, color, and style variations.
+Secure user data handling and encrypted transactions.
+Evaluation Criteria  Evaluation Process : Proposals will be evaluated based on the following weighted criteria: o Design  UX Capabilities (25) o Technical Expertise (20) o Pricing Structure (20) o FashionRetail Experience (15) o Project Timeline  Milestones (10) o Client References (10) 6.
+Payment Terms : o 25 upfront at project initiation o 35 after design and front -end development o 30 after backend integration and testing o 10 after successful launch and 30 days of post -launch support 8.
+Support  Maintenance : Vendor must provide free maintenance for 3 months post -launch and offer an optional annual maintenance package thereafter.
+Client References (10) 6.
