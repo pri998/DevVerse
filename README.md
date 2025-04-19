@@ -8,7 +8,7 @@
 What is DevVerse?
   DevVerse mimics a real-world project team using intelligent agents like:
   
-  🧑‍💼 Business Analyst Agent – Extracts user stories
+  🧑‍💼 Business Analyst Agent – Extracts user stories  
   🎨 Design Agent – Generates UI/UX components & architecture
   💻 Developer Agent – Produces backend code & database structure
   ✅ Tester Agent – Builds test cases based on user stories and code
