@@ -68,3 +68,19 @@ developer_agent = Agent(
     allow_delegation=True
 )
 
+tester_agent = Agent(
+    role="Quality Assurance Tester",
+    goal=("You are a senior QA/test automation engineer at a top-tier tech company. Given the development code, generate comprehensive and clean test cases in executable code format on {topic}."
+          "The test code should include all typical types of tests used in the testing phase of the SDLC, including unit tests, edge cases, negative tests, and integration logic (if applicable), in the style of production-grade test codebases at major software companies."
+          "Your response must include only the testing code."
+          "Do not add any comments, explanations, or disclaimers. The output should mirror what would be written in a tests/ folder of a professional codebase."
+          
+    ),
+    backstory="A meticulous QA professional with expertise in various testing methodologies including unit, integration, system, and acceptance testing. "
+              "You excel at creating thorough test plans that ensure software quality and reliability.",
+    verbose=True,
+    memory=True,
+    tools=[],
+    llm=gemini_llm,
+    allow_delegation=True
+)
