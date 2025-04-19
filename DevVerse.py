@@ -80,3 +80,17 @@ if uploaded_file:
             with st.expander("System Design and Architecture", expanded=False):
                 st.subheader("Design Agent Output:")
                 st.markdown(da_output, unsafe_allow_html=True)
+
+            #Developer Agent
+            st.subheader("Developer Agent")
+            with st.spinner("Generating Developer Agent Output..."):
+                start_time = time.time()
+                # result = crew_dev.run_developer_agent()
+                code = run_developer_agent()
+                end_time = time.time()
+                generation_time = end_time - start_time       
+                st.markdown(f"Generation time: {generation_time:.2f} seconds.  <span style='color:green;'> Generated Output ✅</span>", unsafe_allow_html=True)
+
+            with st.expander("Production-ready Codebase", expanded=False):
+                st.subheader("Developer Agent Output:")
+                st.code(code)
