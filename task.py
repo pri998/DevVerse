@@ -45,3 +45,16 @@ developer_task = Task(
         "ready for testing, deployment, and future enhancements."
     ),
 )
+testing_task = Task(
+    description=(
+        "Based on the implementation code and original requirements, create a comprehensive test suite for {topic}. "
+        "Generate test cases that cover unit testing, integration testing, and system testing. "
+        "Include test cases for validating both functional and non-functional requirements. "
+        "For each test case, specify: test ID, test description, preconditions, test steps, expected results, and status. "
+        "Prioritize tests based on critical functionality and potential risk areas. "
+        "Focus on ensuring all user stories have appropriate test coverage."
+    ),
+    inputs=["topic"],  # Explicit input for topic
+    agent=testing_agent,
+    expected_output="A complete test plan with detailed test cases organized by test level (unit, integration, system) and priority."
+)
