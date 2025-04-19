@@ -45,16 +45,24 @@ developer_task = Task(
         "ready for testing, deployment, and future enhancements."
     ),
 )
-testing_task = Task(
+tester_task = Task(
     description=(
-        "Based on the implementation code and original requirements, create a comprehensive test suite for {topic}. "
-        "Generate test cases that cover unit testing, integration testing, and system testing. "
-        "Include test cases for validating both functional and non-functional requirements. "
-        "For each test case, specify: test ID, test description, preconditions, test steps, expected results, and status. "
-        "Prioritize tests based on critical functionality and potential risk areas. "
-        "Focus on ensuring all user stories have appropriate test coverage."
+        "You are a senior QA engineer at a leading software company. Based on the provided production-grade codebase, "
+        "develop a complete suite of automated tests to validate the system’s functionality, performance, and reliability for {topic}. "
+        "Follow best practices in software testing, such as test-driven development (TDD), black-box and white-box testing, and boundary value analysis. "
+        "Create tests that cover API endpoints, database operations, business logic, and user interactions. "
+        "Include both positive and negative test cases, edge cases, and integration tests. "
+        "Ensure the test suite is easy to maintain, modular, and runnable via test runners such as Jest, Mocha (for Node.js), and React Testing Library. "
+        "Mock dependencies and isolate units of code as appropriate. "
+        "Clearly document the purpose of each test case and its expected behavior."
     ),
-    inputs=["topic"],  # Explicit input for topic
-    agent=testing_agent,
-    expected_output="A complete test plan with detailed test cases organized by test level (unit, integration, system) and priority."
+    inputs=["topic"],
+    agent=tester_agent,
+    expected_output=(
+        "A complete, structured, and production-grade test suite for the provided codebase. "
+        "Include backend API tests (e.g., using Jest or Mocha with Supertest), frontend component tests (e.g., React Testing Library or Jest), and database validation logic. "
+        "Ensure high test coverage, clear assertions, proper mocking, and independence between tests. "
+        "Each test should be self-explanatory and follow best practices for unit, integration, and end-to-end testing. "
+        "Output should be ready for CI/CD pipelines and future maintainability."
+    ),
 )
