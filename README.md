@@ -6,10 +6,10 @@
 
 - What is DevVerse?  
   DevVerse mimics a real-world project team using intelligent agents like:  
-  🧑‍💼 Business Analyst Agent – Extracts user stories  
-  🎨 Design Agent – Generates UI/UX components & architecture  
-  💻 Developer Agent – Produces backend code & database structure  
-  ✅ Tester Agent – Builds test cases based on user stories and code  
+  🔹Business Analyst Agent – Extracts user stories  
+  🔹Design Agent – Generates UI/UX components & architecture  
+  🔹Developer Agent – Produces backend code & database structure  
+  🔹Tester Agent – Builds test cases based on user stories and code  
   These agents collaborate to convert an RFP into project artifacts — automatically, intelligently, and instantly.  
 
 - Problem We Solve:-  
@@ -19,10 +19,10 @@
 
 - Our Solution:-  
   DevVerse automates this workflow using a smart, modular pipeline:  
-  🧠 Embedding : Creation	RFP is encoded into semantic vectors  
-  🔍 Vector Search (ChromaDB) : Retrieves domain-relevant templates  
-  🧩 Agent Collaboration : Agents extract and generate structured outputs  
-  🧾 LLM Response : Final context goes to LLM (Gemini-1.5-flash) to generate artifacts  
+  🔹Embedding : Creation	RFP is encoded into semantic vectors  
+  🔹Vector Search (ChromaDB) : Retrieves domain-relevant templates  
+  🔹Agent Collaboration : Agents extract and generate structured outputs  
+  🔹LLM Response : Final context goes to LLM (Gemini-1.5-flash) to generate artifacts  
 
 - Tech Stack:-  
   Frontend : Streamlit  
@@ -34,10 +34,10 @@
 
 - Agents in Action:-  
   Each agent plays a defined role in the pipeline:  
-  🧑‍💼 Business Analyst Agent : Extracts domain keywords and requirements; Generates user stories based on RFP understanding  
-  🎨 Design Agent : Selects UI layouts from template pool; Builds hierarchy and architecture diagrams  
-  💻 Developer Agent : Suggests database schema and backend module layout (Extendable to generate code skeletons)  
-  ✅ Tester Agent : Derives test cases from user stories and functions; Suggests automation test structure  
+  🔹Business Analyst Agent : Extracts domain keywords and requirements; Generates user stories based on RFP understanding  
+  🔹Design Agent : Selects UI layouts from template pool; Builds hierarchy and architecture diagrams  
+  🔹Developer Agent : Suggests database schema and backend module layout (Extendable to generate code skeletons)  
+  🔹Tester Agent : Derives test cases from user stories and functions; Suggests automation test structure  
 
 - System Architecture Overview:-  
   [User Input: RFP]  
@@ -57,10 +57,10 @@
   [User Stories | Design | Code | Test Cases]  
 
 - Impact:-  
-  ⏱️ 80%+ reduction in manual effort  
-  ⚡ Rapid transition from RFP to assets  
-  📚 Standardized documentation across projects  
-  🌐 Domain-agnostic: works for fintech, healthcare, e-commerce, etc.  
+  🔹80%+ reduction in manual effort  
+  🔹Rapid transition from RFP to assets  
+  🔹Standardized documentation across projects  
+  🔹Domain-agnostic: works for fintech, healthcare, e-commerce, etc.  
 
 - Future Scope:-  
   Add agents like UI/UX Designer, Scrum Master, Security Expert  
