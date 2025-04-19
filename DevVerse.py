@@ -5,6 +5,7 @@ import time
 from crew_businessAgent import run_business_analyst
 from crew_designAgent import run_design_agent
 from crew_developerAgent import run_developer_agent
+from crew_testerAgent import run_tester_agent
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -95,3 +96,19 @@ if uploaded_file:
             with st.expander("Production-ready Codebase", expanded=False):
                 st.subheader("Developer Agent Output:")
                 st.code(code)
+
+            #Tester Agent
+            st.subheader("Tester Agent")
+            with st.spinner("Generating Tester Agent Output..."):
+                start_time = time.time()
+                test_cases = run_tester_agent()
+                # code = run_developer_agent()
+                end_time = time.time()
+                generation_time = end_time - start_time
+                
+                st.markdown(f"Generation time: {generation_time:.2f} seconds.  <span style='color:green;'> Generated Output ✅</span>", unsafe_allow_html=True)
+                # tester_output = {test_cases}
+
+            with st.expander("Test Cases", expanded=False):
+                st.subheader("Tester Agent Output:")
+                st.code(test_cases)
