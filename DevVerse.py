@@ -4,6 +4,7 @@ from Extraction import process_pdf_text
 import time
 from crew_businessAgent import run_business_analyst
 from crew_designAgent import run_design_agent
+from crew_developerAgent import run_developer_agent
 
 def local_css(file_name):
     with open(file_name) as f:
