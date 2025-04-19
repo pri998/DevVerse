@@ -7,6 +7,8 @@ MODEL_NAME = 'all-MiniLM-L6-v2'
 CHROMA_COLLECTION = "project_docs"
 MAX_MATCHES = 5
 
+
+
 # === Setup Embedding Model and Chroma Client ===
 model = SentenceTransformer(MODEL_NAME)
 chroma = chromadb.Client(Settings())
